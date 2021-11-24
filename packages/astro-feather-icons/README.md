@@ -1,45 +1,91 @@
-# astro-feather-icons
+# Astro Feather Icons
+
+Feather is a collection of simply beautiful open source icons.
+Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility.
+
+```shell
+npm install astro-feather-icons
+```
+
+```shell
+pnpm i astro-feather-icons
+```
+
+```shell
+yarn add astro-feather-icons
+```
 
 [GitHub](https://github.com/edazpotato/astro-feather-icons) |
 [NPM](https://npmjs.com/package/astro-feather-icons)
 
-## Install
 
-```bash
-npm i astro-feather-icons --save
-pnpm i astro-feather-icons
-```
 
 ## Usage
 
+All of the icons are available from a single import, and only the icons that are used will be added to the page.
+
 ```astro
 ---
-import { AirplayIcon, AtSignIcon, ... } from 'astro-feather-icons'
+import * as Icon from 'astro-feature-icons'
 ---
-
-<AirplayIcon size="24" />
-<AtSignIcon size="1.5x" />
+<Icon.AirPlay />
+<Icon.AtSign />
+<Icon.Zap size="60" fill="gold" />
 ```
 
-See all icons here: https://feathericons.com/ More examples can be found in
-[/src/pages/index.astro](/src/pages/index.astro).
+The icons are also available as individual imports.
 
-## Prop types
+```astro
+---
+import AirPlayIcon from 'astro-feature-icons/AirPlay'
+import AtSignIcon from 'astro-feature-icons/AtSign'
+import ZapIcon from 'astro-feature-icons/Zap'
+---
+<AirPlayIcon />
+<AtSignIcon />
+<ZapIcon size="60" fill="gold" />
+```
 
-Here's the `Props` interface used in every icon component:
+
+
+## Prop Types
+
+The following `Props` interface is available to every icon:
 
 ```ts
 export interface Props {
-	size?: string | number;
-	strokeWidth?: number;
-	class?: string;
-	color?: string;
+  'fill'?: string;
+  'fill-opacity'?: number | string;
+  'fill-rule'?: "nonzero" | "evenodd" | "inherit";
+  'height'?: number | string;
+  'size'?: number | string;
+  'stroke'?: string;
+  'stroke-dasharray'?: string | number;
+  'stroke-dashoffset'?: string | number;
+  'stroke-linecap'?: "butt" | "round" | "square" | "inherit";
+  'stroke-linejoin'?: "miter" | "round" | "bevel" | "inherit";
+  'stroke-miterlimit'?: number | string;
+  'stroke-opacity'?: number | string;
+  'stroke-width'?: number | string;
+  'viewBox'?: string;
+  'width'?: number | string;
 }
 ```
 
-## Author
+- The `Props` interface additionally includes:
+  - All HTML global attributes.
+  - All WAI-ARIA attributes and the WAI-ARIA role attribute.
+- The `title` attribute transforms into a `<title>` element within the `<svg>`.
+- The `size` attribute transforms values like `1.5x` into `1.5em`.
+- The `size` attribute is used as the default values for `width` and `height`.
+
+
+
+## Acknowledgements
 
 This package is maintained by [Edazpotato](https://github.com/edazpotato) and
 based on
 [svelte-feather-icons](https://github.com/dylanblokhuis/svelte-feather-icons) by
 [dylanblokhuis](https://github.com/dylanblokhuis).
+
+Licensed under the MIT License. Copyright © 2013–present Cole Bemis.
