@@ -26,7 +26,7 @@ All of the icons are available from a single import, and only the icons that are
 
 ```astro
 ---
-import * as Icon from 'astro-feature-icons'
+import * as Icon from 'astro-feather-icons'
 ---
 <Icon.AirPlay />
 <Icon.AtSign />
@@ -37,9 +37,9 @@ The icons are also available as individual imports.
 
 ```astro
 ---
-import AirPlayIcon from 'astro-feature-icons/AirPlay'
-import AtSignIcon from 'astro-feature-icons/AtSign'
-import ZapIcon from 'astro-feature-icons/Zap'
+import AirPlayIcon from 'astro-feather-icons/AirPlay'
+import AtSignIcon from 'astro-feather-icons/AtSign'
+import ZapIcon from 'astro-feather-icons/Zap'
 ---
 <AirPlayIcon />
 <AtSignIcon />
