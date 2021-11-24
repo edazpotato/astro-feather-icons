@@ -22,7 +22,7 @@ import { AirplayIcon, AtSignIcon, ... } from 'astro-feather-icons'
 ```
 
 See all icons here: https://feathericons.com/ More examples can be found in
-[src/pages/index.astro](src/pages/index.astro).
+[/src/pages/index.astro](/src/pages/index.astro).
 
 ## Prop types
 
