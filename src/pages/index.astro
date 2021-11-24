@@ -1,0 +1,27 @@
+---
+import { ExternalLinkIcon, ShoppingCartIcon, RssIcon, AlertOctagonIcon, BookIcon } from "astro-feather-icons"
+---
+
+<html lang="en">
+	<head>
+		<title>Astro Feather Icons</title>
+	</head>
+	<body>
+		<AlertOctagonIcon />
+		<ExternalLinkIcon size={120} /> <!-- 100% by default -->
+		<ShoppingCartIcon strokeWidth={1} />
+		<RssIcon class="blue" />
+		<BookIcon color="red" />
+	</body>
+</html>
+
+<style>
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	:global(.blue) {
+		color: blue;
+	}
+</style>

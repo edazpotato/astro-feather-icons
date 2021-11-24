@@ -1,44 +1,14 @@
 {
-  "name": "svelte-feather-icons",
-  "description": "Feather icons for Svelte (Completely based on vue-feather-icons by EGOIST)",
-  "version": "3.5.0",
-  "author": "dylanblokhuis <dylanblokhuis3@hotmail.com>",
-  "repository": {
-    "url": "dylanblokhuis/svelte-feather-icons",
-    "type": "git"
-  },
-  "svelte": "src/index.js",
-  "module": "index.mjs",
-  "main": "index.js",
-  "files": [
-    "src",
-    "index.mjs",
-    "index.js",
-    "index.d.ts"
-  ],
-  "types": "index.d.ts",
-  "license": "MIT",
-  "scripts": {
-    "build:icons": "node build",
-    "build:dist": "rollup -c",
-    "build": "npm run build:icons && npm run build:dist",
-    "prepublishOnly": "npm run build"
-  },
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "feather-icons": "4.28.0",
-    "fs-extra": "^10.0.0",
-    "pascal-case": "^3.1.2",
-    "path": "^0.12.7",
-    "rollup": "latest",
-    "rollup-plugin-svelte": "latest",
-    "rollup-plugin-terser": "^7.0.2"
-  },
-  "keywords": [
-    "svelte",
-    "feather icons"
-  ],
-  "dependencies": {
-    "svelte": "^3.38.2"
-  }
+	"name": "astro-feather-icons-workspace",
+	"workspaces": [
+		"./packages/*"
+	],
+	"dependencies": {
+		"astro": "^0.21.3"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
+	}
 }
