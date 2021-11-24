@@ -1,7 +1,7 @@
 {
 	"name": "astro-feather-icons",
 	"description": "Feather icons for Astro (based on svelte-feather-icons by dylanblokhuis)",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "edazpotato <edazpotato@gmail.com> (https://edaz.codes/)",
 	"repository": {
 		"url": "edazpotato/astro-feather-icons",
