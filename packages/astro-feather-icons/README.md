@@ -22,7 +22,18 @@ yarn add astro-feather-icons
 
 ## Usage
 
-All of the icons are available from a single import, and only the icons that are used will be added to the page.
+All of the icons are available from a single import.
+
+```astro
+---
+import { AirPlay, AtSign, Zap } from 'astro-feather-icons'
+---
+<AirPlay />
+<AtSign />
+<Zap size="60" fill="gold" />
+```
+
+When importing all of the icons, only the ones that get used will be added to the page
 
 ```astro
 ---
