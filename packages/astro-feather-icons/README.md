@@ -99,4 +99,4 @@ based on
 [svelte-feather-icons](https://github.com/dylanblokhuis/svelte-feather-icons) by
 [dylanblokhuis](https://github.com/dylanblokhuis).
 
-Licensed under the MIT License. Copyright © 2013–present Cole Bemis.
+Licensed under the MIT License. Feather Icons & Feather name Copyright © 2013–present Cole Bemis.
