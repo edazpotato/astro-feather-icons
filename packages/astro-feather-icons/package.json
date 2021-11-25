@@ -2,35 +2,34 @@
 	"name": "astro-feather-icons",
 	"description": "Feather icons for Astro (based on svelte-feather-icons by dylanblokhuis)",
 	"version": "0.1.4",
-	"author": "edazpotato <edazpotato@gmail.com> (https://edaz.codes/)",
-	"repository": {
-		"url": "edazpotato/astro-feather-icons",
-		"type": "git"
+	"type": "module",
+	"exports": {
+	  ".": "./dist/index.js",
+	  "./*": "./dist/*.astro"
 	},
-	"exports": "./dist/index.js",
-	"module": "./dist/index.js",
-	"main": "./dist/index.js",
 	"files": [
-		"dist"
+	  "dist"
 	],
-	"types": "index.d.ts",
 	"license": "MIT",
+	"repository": "edazpotato/astro-feather-icons",
+	"author": "edazpotato <edazpotato@gmail.com> (https://edaz.codes/)",
+	"authors": [
+		"Cole Bemis <cole@colebemis.com> (http://colebemis.com)"
+	],
 	"scripts": {
 		"build:icons": "node build",
 		"build": "npm run build:icons",
 		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
-		"feather-icons": "4.28.0",
-		"fs-extra": "^10.0.0",
-		"pascal-case": "^3.1.2"
+		"feather-icons": "4.28.0"
 	},
 	"keywords": [
 		"astro",
+		"astro-component",
+		"feather",
 		"feather icons",
-		"astro-component"
-	],
-	"dependencies": {
-		"astro": "^0.21.3"
-	}
+		"icon",
+		"icons"
+	]
 }
