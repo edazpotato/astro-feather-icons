@@ -1,1 +1,1 @@
-packages/astro/README.md
+packages/astro-feather-icons/README.md
