@@ -1,1 +1,1 @@
-C:/Users/gamer/Documents/projects/web/astro-feather-icons/packages/astro-feather-icons/README.md
+packages/astro-feather-icons/README.md
