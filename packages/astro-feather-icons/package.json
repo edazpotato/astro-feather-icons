@@ -1,14 +1,14 @@
 {
 	"name": "astro-feather-icons",
 	"description": "Feather icons for Astro (based on svelte-feather-icons by dylanblokhuis)",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"type": "module",
 	"exports": {
-	  ".": "./dist/index.js",
-	  "./*": "./dist/*.astro"
+		".": "./dist/index.js",
+		"./*": "./dist/*.astro"
 	},
 	"files": [
-	  "dist"
+		"dist"
 	],
 	"license": "MIT",
 	"repository": "edazpotato/astro-feather-icons",
